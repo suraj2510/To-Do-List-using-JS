@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html,body{
+    width: 100%;
+    height: 100%;
+} */
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgb(37, 37, 231),rgb(201, 123, 136));
+    padding: 10px;
+}
+.content{
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 12px;
+}
+.content h2{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px ;
+}
+.content h2 img{
+    width: 35px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(233, 224, 224);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+input{
+    flex: 1; 
+    border: none;
+    outline: none;
+    background: transparent;
+ padding: 10px; 
+ font-size: 20px;
+}
+
+button{
+    background:rgb(128, 18, 192);
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 22px;
+    padding: 12px 38px 12px ;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url("https://flyclipart.com/thumb2/circle-empty-round-thin-unchecked-icon-406696.png");
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 1px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/190/190411.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #555;
+    border-radius: 50%;
+}
+ul li span:hover{
+background:#edeef0;
+}
+
+
+
+
+
+
